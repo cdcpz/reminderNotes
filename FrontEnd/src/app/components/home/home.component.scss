@@ -1,0 +1,144 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .toolbar {
+    width: 100%;
+    height: 65px;
+    border: 1px solid #dbdde0;
+    padding: 0.50rem;
+    border-radius: 6px;
+    gap: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .git {
+      width: 10%;
+      height: 100%;
+      display: flex;
+      padding-right: 30px;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .container-toolbar {
+      width: 100%;
+      max-width: 1040px;
+      height: 65px;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+
+      .logo {
+        width: 20%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        label {
+          font-size: 20px;
+          font-weight: 600;
+          cursor: pointer;
+        }
+        img{
+          cursor: pointer;
+        }
+
+      }
+
+
+
+      .search {
+        width: 60%;
+        height: inherit;
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        .icon-search {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .span_search {
+          display: flex;
+          align-items: center;
+          position: relative;
+          width: 100%;
+          height: inherit;
+
+
+          .icon-search {
+            position: absolute;
+            left: 7px;
+            font-size: 18px;
+          }
+        }
+
+        .input-search {
+          width: 70%;
+          height: 70%;
+          border-radius: 10px 0 0 10px;
+          border: 1px solid black;
+          border-right: transparent;
+          padding-left: 44px;
+          outline: none;
+        }
+
+        .btn-search {
+          width: 42px;
+          height: 45px;
+          border-radius: 0px 10px 10px 0;
+          border: 1px solid black;
+          border-left: transparent;
+          outline: none;
+          cursor: pointer;
+          background-color: #3b82f6;
+          .icon-btn-search {
+            font-weight: 600;
+            font-size: 19px;
+            color: rgb(255, 255, 255);
+          }
+        }
+      }
+
+    }
+  }
+
+  .page {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .container {
+      width: 100%;
+      max-width: 1040px;
+      height: calc(100vh - 65px);
+      display: flex;
+
+      &-button {
+        width: 100%;
+        height: 65px;
+        padding-top: 10px;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+      }
+      .note {
+        width: 100%;
+        height: 100%;
+        padding: 30px;
+        gap: 30px;
+        display: flex;
+        flex-wrap: wrap;
+
+      }
+    }
+  }
+}

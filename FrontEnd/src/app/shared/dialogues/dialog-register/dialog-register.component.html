@@ -1,0 +1,22 @@
+<div class="root">
+    <div class="card flex justify-content-center">
+        <form [formGroup]="forms">
+            <div class="content-note">
+                <div class="title flex justify-content-center">
+                    <input formControlName="title" pInputText pKeyFilter="int" placeholder="Title" />
+                </div>
+                <div class="notes">
+                    <textarea formControlName="body" rows="5" cols="30" placeholder="add a note" pInputTextarea
+                        [autoResize]="true"></textarea>
+                </div>
+            </div>
+        </form>
+        <div class="container-btn">
+            <p-button (click)="register()" icon="pi pi-check" label="Ok" pAutoFocus [autofocus]="true">
+            </p-button>
+            <p-button (click)="closeDialog()" label="Cancelar" pAutoFocus [autofocus]="true">
+            </p-button>
+
+        </div>
+    </div>
+</div>

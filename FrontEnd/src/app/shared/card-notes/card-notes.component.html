@@ -1,0 +1,23 @@
+<div class="container-card">
+    <p-card header="{{title}}">
+        <p class="m-0">{{body}}</p>
+        <div class="container-button">
+            <button class="btn_menu" (click)="menu.toggle($event)">
+                <span class="material-symbols-outlined">
+                    more_vert
+                </span>
+            </button>
+            <!-- <p-menu #tag [model]="items" [popup]="true"></p-menu> -->
+            <p-menu #menu [model]="items" [popup]="true"></p-menu>
+        </div>
+        <div class="container-tag">
+            @for (itemTag of tags; track itemTag) {
+                <app-tag 
+                    [tag]="itemTag" 
+                    (choosed)="manageTagResponse($event)">
+                </app-tag>
+            }
+        </div>
+
+    </p-card>
+</div>

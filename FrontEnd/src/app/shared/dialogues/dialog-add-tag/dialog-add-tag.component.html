@@ -1,0 +1,13 @@
+<div class="container">
+    <form [formGroup]="forms">
+        <div class="tag-note">
+            <input formControlName="tag" id="input-tag" type="text" placeholder="enter a tag name" />
+        </div>
+        <div class="colorPicker">
+            <p-colorPicker formControlName="color" [inline]="true" format="rgb"></p-colorPicker>
+        </div>
+    </form>
+</div>
+<div class="btn-creation">
+    <button (click)="register()" icon="pi pi-check">Creation</button>
+</div>

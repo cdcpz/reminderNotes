@@ -1,0 +1,30 @@
+.container-tag {
+    .tag {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        padding: 2px 4px;
+        border-radius: 4px;
+
+        i {
+            width: 17px;
+            height: 17px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 13px;
+            border-radius: 100%;
+
+            &:hover {
+                cursor: pointer;
+                background-color: rgb(169, 67, 67);
+            }
+        }
+    }
+}
+
+// :host ::ng-deep .p-tag {
+//     background-color: rgb(149, 146, 146);
+//     border: 1px solid red;
+// }
